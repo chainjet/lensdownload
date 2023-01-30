@@ -2,6 +2,7 @@ import { Layout } from '@/src/components/layout'
 import '@/styles/globals.css'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
 import type { AppProps } from 'next/app'
+import '@/styles/libs/video-react.css'
 
 const theme = createTheme({
   type: 'dark',

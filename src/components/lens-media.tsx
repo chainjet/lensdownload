@@ -1,12 +1,10 @@
-import { Card, Row, Text, Button, Loading, Progress } from '@nextui-org/react'
-import { useEffect } from 'react'
+import { Row, Button, Loading, Progress } from '@nextui-org/react'
 import ReactAudioPlayer from 'react-audio-player'
 import useDownloader from 'react-use-downloader'
 import { capitalize } from '../utils/string'
 import { parseBytes } from '../utils/units'
 import mime from 'mime-types'
 import { Player } from 'video-react'
-// import '~video-react/dist/video-react.css'
 
 interface Props {
   media: {
