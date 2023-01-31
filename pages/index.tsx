@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Input, Loading, Row, Text } from '@nextui-org/react'
+import { Grid, Input, Loading, Row, Text } from '@nextui-org/react'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const router = useRouter()
@@ -28,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main} style={{ marginBottom: 48 }}>
-        <Row justify="center" align="center" css={{ my: 48 }}>
+        <Grid.Container justify="center" css={{ my: 36 }}>
           <Text
             h1
             size={60}
@@ -65,8 +62,8 @@ export default function Home() {
           <Text h1 size={60}>
             🌿
           </Text>
-        </Row>
-        <Row justify="center" align="center" css={{ maxW: 600 }}>
+        </Grid.Container>
+        <Row justify="center" align="center" css={{ maxW: 600, px: 20 }}>
           <Input
             labelPlaceholder={loading ? 'Loading...' : 'Paste a Lens publication URL here'}
             fullWidth
