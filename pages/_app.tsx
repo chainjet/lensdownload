@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
 import type { AppProps } from 'next/app'
 import '@/styles/libs/video-react.css'
+import { Analytics } from '@/src/components/analytics'
 
 const theme = createTheme({
   type: 'dark',
@@ -17,10 +18,13 @@ const theme = createTheme({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <NextUIProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </NextUIProvider>
+    <>
+      <Analytics />
+      <NextUIProvider theme={theme}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </NextUIProvider>
+    </>
   )
 }
