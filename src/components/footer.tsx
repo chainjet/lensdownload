@@ -23,7 +23,7 @@ export function Footer() {
           link="https://chainjet.io/workflows/637e651a37aab4c08aefb7bb"
           logos={[
             {
-              src: 'https://chainjet.io/images/lens.png',
+              src: 'https://chainjet.io/img/lens.png',
               alt: 'Lens logo',
             },
             {
@@ -38,7 +38,7 @@ export function Footer() {
           link="https://chainjet.io/workflows/63a9f0b125fb61a9ea27f6f8"
           logos={[
             {
-              src: 'https://chainjet.io/images/lens.png',
+              src: 'https://chainjet.io/img/lens.png',
               alt: 'Lens logo',
             },
             {
@@ -57,7 +57,7 @@ export function Footer() {
               alt: 'Twitter logo',
             },
             {
-              src: 'https://chainjet.io/images/lens.png',
+              src: 'https://chainjet.io/img/lens.png',
               alt: 'Lens logo',
             },
           ]}
@@ -72,7 +72,7 @@ export function Footer() {
               alt: 'RSS logo',
             },
             {
-              src: 'https://chainjet.io/images/lens.png',
+              src: 'https://chainjet.io/img/lens.png',
               alt: 'Lens logo',
             },
           ]}
